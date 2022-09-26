@@ -24,7 +24,7 @@ def main():
         
         
 def predict_class(test_image):
-    classifier_model = tf.keras.models.load_model("https://drive.google.com/file/d/1QBhheJz56EUCNtKQJ91gBeOjRtnkZQmt/view?usp=sharing")
+    classifier_model = tf.keras.models.load_model("model1.h5")
     shape = (300, 300, 3)
     model = tf.keras.Sequential([hub.KerasLayer(classifier_model, input_shape = shape)])
     test_image = test_image.resize((300, 300))
