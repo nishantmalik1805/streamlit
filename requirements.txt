@@ -1,1 +1,1 @@
-pipenv install -U matplotlib
+matplotlib
